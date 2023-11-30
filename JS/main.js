@@ -4,6 +4,7 @@ import { addToCart } from "./cart.js";
 import { handleCheckout } from "./checkout.js";
 import { displayGames } from "./games.js";
 import { displayGameDetails } from "../product.js";
+import { loadProductDetails } from "../product.js";
 
 // Use fetchGames to get the games data and display them
 fetchGames()
@@ -21,4 +22,3 @@ import { updateCartCount } from "./cart.js";
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
 });
-
