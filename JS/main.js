@@ -1,6 +1,10 @@
+// Import functions from other modules
 import { fetchGames } from "./api.js";
-import { displayGames } from "./displayGames.js"; // Assuming displayGames is in displayGames.js
+import { addToCart } from "./cart.js";
+import { handleCheckout } from "./checkout.js";
+import { displayGames } from "./games.js";
 
+// Use fetchGames to get the games data and display them
 fetchGames()
   .then((games) => {
     if (games && games.length > 0) {
@@ -10,3 +14,4 @@ fetchGames()
     }
   })
   .catch((error) => console.error("Error fetching games:", error));
+

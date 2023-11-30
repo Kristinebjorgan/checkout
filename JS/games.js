@@ -15,6 +15,10 @@ export function displayGames(games) {
             <p>Discount Price: ${game.discountPrice}</p>
             <button class="buy-button" onclick="addToCart(${game.id})">Buy</button>
         `;
+    const addButton = document.createElement("button");
+    addButton.textContent = "Add to Cart";
+    addButton.addEventListener("click", () => addToCart(game.id));
+    card.appendChild(addButton);
 
     container.appendChild(card);
   });
