@@ -15,7 +15,8 @@ export function displayGames(games) {
             <p>Price: ${game.price}</p>
             <div class="buttoncontainer">
                 <a href="#" class="button" onclick="addToCart(${game.id})">Buy</a>
-            </div>
+                <a href="product.html?gameId=${game.id}" class="button">Read More</a>
+                </div>
         `;
 
       container.appendChild(productContainer);
