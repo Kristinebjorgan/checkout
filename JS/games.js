@@ -1,25 +1,24 @@
 // Fetch and display games
-import { fetchGames } from "./api.js";
+import { addToCart } from "./cart.js";
 
 export function displayGames(games) {
-  const container = document.getElementById("games-container");
-  games.forEach((game) => {
-    const card = document.createElement("div");
-    card.className = "game-card";
+  {
+    const container = document.getElementById("games-container");
+    games.forEach((game) => {
+      const productContainer = document.createElement("div");
+      productContainer.className = "product-container";
 
-    card.innerHTML = `
-            <img class="game-img" src="${game.image}" alt="${game.title}">
+      productContainer.innerHTML = `
+            <img src="${game.image}" alt="${game.title}">
             <h3>${game.title}</h3>
             <p>${game.description}</p>
             <p>Price: ${game.price}</p>
-            <p>Discount Price: ${game.discountPrice}</p>
-            <button class="buy-button" onclick="addToCart(${game.id})">Buy</button>
+            <div class="buttoncontainer">
+                <a href="#" class="button" onclick="addToCart(${game.id})">Buy</a>
+            </div>
         `;
-    const addButton = document.createElement("button");
-    addButton.textContent = "Add to Cart";
-    addButton.addEventListener("click", () => addToCart(game.id));
-    card.appendChild(addButton);
 
-    container.appendChild(card);
-  });
+      container.appendChild(productContainer);
+    });
+  }
 }

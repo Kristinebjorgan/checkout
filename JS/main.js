@@ -15,3 +15,8 @@ fetchGames()
   })
   .catch((error) => console.error("Error fetching games:", error));
 
+import { updateCartCount } from "./cart.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
