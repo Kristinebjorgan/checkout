@@ -4,7 +4,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cartContainer = document.getElementById("cart-container");
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
   cart.forEach((game) => {
     const gameElement = document.createElement("div");
     gameElement.innerHTML = `
