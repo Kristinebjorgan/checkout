@@ -8,10 +8,7 @@
       name="description"
       content="a huge rage of games available at competitive prices with options for buying new or used. For hardcore gamers as well as casual players"
     />
-    <meta
-      name="keywords"
-      content="HTML, CSS, Gamehub, games, gaming, used, new"
-    />
+    <meta name="keywords" content="HTML, CSS, Gamehub, games, gaming, used, new"/>
     <meta name="author" content="Kristine Bjørgan Østby" />
     <script
       src="https://kit.fontawesome.com/ecc68a9eb9.js"
@@ -47,7 +44,10 @@
         <div id="cart-icon-container">
           <i id="user" class="fa-solid fa-user"></i>
           <i id="heart" class="fa-solid fa-heart"></i>
-          <span id="cart-count" class="cart-count">0</span>
+          <a href="checkout.html" class="cart-link">
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
         </div>
       </div>
     </header>
@@ -60,6 +60,7 @@
         <p id="total">Total: $0</p>
       </div>
       <button id="checkout-button" class="checkout-button">Place Order</button>
+      <button id="clear-cart-button" class="clear-cart-button">Clear Cart</button>
     </div>
 
     <script defer type="module" src="/JS/main.js"></script>

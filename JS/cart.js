@@ -24,4 +24,7 @@ export function updateCartCount() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartCount = cart.length;
   document.getElementById("cart-count").textContent = cartCount;
+
+window.addToCart = addToCart;
+
 }

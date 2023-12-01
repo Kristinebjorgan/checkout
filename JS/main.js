@@ -6,7 +6,7 @@ import { displayGames } from "./games.js";
 import { displayGameDetails } from "./product.js";
 import { loadProductDetails } from "./product.js";
 
-// Use fetchGames to get the games data and display them
+// Use fetchGames to get the games data
 fetchGames()
   .then((games) => {
     if (games && games.length > 0) {

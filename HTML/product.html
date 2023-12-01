@@ -26,48 +26,61 @@
     />
     <link href="/CSS/styles.css" rel="stylesheet" />
   </head>
-  <header id="top">
-    <a href="index.html"><img src="/images/gamehub logo.png" class="logo" alt="Gamehub Logo"/></a>
-    <h1 class="title">A UNIVERSE OF GAMES</h1>
-    <div class="searchcontainer">
-      <input class="searchbar" type="text" placeholder="Search.." />
-    </div>
-    <nav>
-      <a class="navlink" href="index.html" aria-label="Home">Home</a>
-      <a class="navlink" href="games.html" aria-label="Games">Games</a>
-      <a class="navlink" href="games.html" aria-label="Equipment">Equipment</a>
-      <a class="navlink" href="games.html" aria-label="Outlet">Outlet</a>
-    </nav>
-    <div class="icons">
-      <div id="cart-icon-container">
-        <i id="user" class="fa-solid fa-user"></i>
-        <i id="heart" class="fa-solid fa-heart"></i>
-        <span id="cart-count" class="cart-count">0</span>
+  <body>
+    <header id="top">
+      <a href="index.html"
+        ><img src="/images/gamehub logo.png" class="logo" alt="Gamehub Logo"
+      /></a>
+      <h1 class="title">A UNIVERSE OF GAMES</h1>
+      <div class="searchcontainer">
+        <input class="searchbar" type="text" placeholder="Search.." />
       </div>
-    </div>
-  </header>
-
+      <nav>
+        <a class="navlink" href="index.html" aria-label="Home">Home</a>
+        <a class="navlink" href="games.html" aria-label="Games">Games</a>
+        <a class="navlink" href="games.html" aria-label="Equipment"
+          >Equipment</a
+        >
+        <a class="navlink" href="games.html" aria-label="Outlet">Outlet</a>
+      </nav>
+      <div class="icons">
+        <div id="cart-icon-container">
+          <i id="user" class="fa-solid fa-user"></i>
+          <i id="heart" class="fa-solid fa-heart"></i>
+          <a href="checkout.html" class="cart-link">
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
 
     <!-- MAIN -->
-        
+
     <main>
       <div class="game-details-container">
-    <img id="game-image" src="" alt="Game Image">
-    <h2 id="game-description">Game Description</h2>
-    <p id="game-genre">Genre: <span id="game-genre-value"></span></p>
-    <p id="game-price">Price: <span id="game-price-value"></span></p>
-    <p id="game-discount-price">Discount Price: <span id="game-discount-price-value"></span></p>
-</div>
-</main>
+        <img id="game-image" src="" alt="Game Image" />
+        <div id="game-title"></div>
+        <div id="game-description"></div>
+        <div id="game-release-date"></div>
+        <div id="game-genre-value"></div>
+        <div id="game-age-rating"></div>
+        <div id="game-price-value"></div>
+        <div id="game-discount-price-value"></div>
+        <div id="game-favourite"></div>
 
+        <div id="buy-button-container"></div>
+      </div>
+    </main>
 
     <!-- FOOTER  -->
 
     <footer>
       <div class="footerlinks">
-      <a id="Aboutus" href="about.html">About</a>
-      <a id="Contact" href="contact.html">Contact</a></div>
-  </footer>
+        <a id="Aboutus" href="about.html">About</a>
+        <a id="Contact" href="contact.html">Contact</a>
+      </div>
+    </footer>
     <script defer src="/JS/main.js" type="module"></script>
-</body>
+  </body>
 </html>
