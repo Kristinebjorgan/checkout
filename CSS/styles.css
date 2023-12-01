@@ -133,3 +133,22 @@ nav {
 .button:hover {
   background-color: #0056b3;
 }
+
+/* PRODUCT */
+
+.game-details-container {
+    background-color: white;
+    color: #1B203D;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15%;
+    padding-top: 5%;
+}
+
+.game-details-container img {
+    max-width: 50%;
+    max-height: 10%;
+    border-radius: 15px;
+    box-shadow: #1B203D;
+  }
