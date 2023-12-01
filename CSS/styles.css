@@ -70,6 +70,10 @@ nav {
   color: #edc771;
 }
 
+#cart, #cart-count {
+  color:#edc771;
+}
+
 .searchcontainer {
   grid-row: 1 / 2;
   grid-column: 3 / 4;

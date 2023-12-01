@@ -21,4 +21,9 @@ import { updateCartCount } from "./cart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
+
+  if (window.location.pathname.endsWith("product.html")) {
+    loadProductDetails();
+  }
 });
+
