@@ -45,7 +45,7 @@ export function handleCheckout() {
 
   clearCart(); // Call clearCart to handle clearing the cart
 
-    window.location.href = "HTML/success.html";
+    window.location.href = "success.html";
 }
 
 // Function to clear the cart
