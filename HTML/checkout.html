@@ -50,19 +50,31 @@
           </a>
         </div>
       </div>
+      <a id="backButton" class="back-arrow">←</a>
     </header>
-    <div class="container">
+    <main class="container">
+    <div>
       <h1>Checkout</h1>
       <div id="cart-container" class="cart-container"></div>
       <div class="totals">
-        <p id="subtotal">Subtotal: $0</p>
-        <p id="tax">Tax: $0</p>
-        <p id="total">Total: $0</p>
+        <p id="subtotal">Subtotal:</p>
+        <p id="tax">Tax:</p>
+        <p id="total">Total:</p>
       </div>
-      <button id="checkout-button" class="checkout-button">Place Order</button>
-      <button id="clear-cart-button" class="clear-cart-button">Clear Cart</button>
+      <a href="success.html" class="button">Place Order</a>
+      <button id="clear-cart-button" class="button">
+        Clear Cart
+      </button>
     </div>
-
-    <script defer type="module" src="/JS/main.js"></script>
+</main>
+<a href="#top" class="to-top-button">↑ Top</a>    
+<script defer type="module" src="/JS/main.js"></script>
+    <footer>
+      <div class="footerlinks">
+        <a id="Aboutus" href="about.html">About</a>
+        <a id="Contact" href="contact.html">Contact</a>
+      </div>
+    </footer>
+    <script defer src="Js/main.js" type="module"></script>
   </body>
 </html>

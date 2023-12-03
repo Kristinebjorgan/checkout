@@ -7,11 +7,11 @@ export function displayGames(games) {
     const container = document.getElementById("games-container");
 
     if (games.length === 0) {
-      loadingMessage.textContent = "No games found.";
+      loader.textContent = "No games found.";
       return;
     }
 
-    loadingMessage.style.display = "none";
+    loader.style.display = "none";
 
     games.forEach((game) => {
       const productContainer = document.createElement("div");
@@ -23,8 +23,8 @@ export function displayGames(games) {
       <p>${game.description}</p>
       <p>Price: ${game.price}</p>
       <div class="buttoncontainer">
-          <button class="button" onclick="addToCart('${game.id}')">Add to cart</button>
-          <a href="product.html?gameId=${game.id}" class="button">Read More</a>
+          <button class="button" onclick="addToCart('${game.id}')">ADD TO CART</button>
+          <a href="product.html?gameId=${game.id}" class="button">READ MORE</a>
       </div>
         `;
 

@@ -29,7 +29,7 @@ export function displayGameDetails(gameId) {
         "buy-button-container"
       );
       if (buyButtonContainer) {
-        buyButtonContainer.innerHTML = `<button class="button" onclick="addToCart('${game.id}')">Buy</button>`;
+        buyButtonContainer.innerHTML = `<button class="button" onclick="addToCart('${game.id}')">ADD TO CART</button>`;
       }
     } else {
       // game not found
