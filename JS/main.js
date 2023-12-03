@@ -9,18 +9,17 @@ import { updateCartCount } from "./cart.js";
 
 let baseURL;
 
-if (
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1"
-) {
-  // Local development server
-  baseURL = "http://localhost:YOUR_PORT"; // Replace YOUR_PORT with your local server's port
+if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    // Local development server
+    baseURL = "http://localhost:YOUR_PORT"; // Replace YOUR_PORT with your local server's port
 } else {
-  // Production server (Netlify)
-  baseURL = "https://your-netlify-domain.com"; // Replace with your Netlify domain
+    // Production server (Netlify)
+    baseURL = ""; // In production, use relative paths
 }
 
-// Use baseURL for fetching data or referencing files
+// Example of using baseURL
+// fetch(`${baseURL}/path/to/your/api/endpoint`)
+
 
 // Back button
 function backButton() {

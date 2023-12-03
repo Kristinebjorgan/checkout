@@ -5,3 +5,11 @@ export function fetchGames() {
     .then(response => response.json())
     .catch(error => console.error('Error while fetching games', error));
 }
+
+import { baseURL } from "./main.js";
+
+export function fetchGames() {
+  return fetch(`${baseURL}/path/to/your/api/endpoint`)
+    .then((response) => response.json())
+    .catch((error) => console.error("Error while fetching games", error));
+}
