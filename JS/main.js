@@ -17,10 +17,6 @@ if (window.location.hostname === "localhost" || window.location.hostname === "12
     baseURL = ""; // In production, use relative paths
 }
 
-// Example of using baseURL
-// fetch(`${baseURL}/path/to/your/api/endpoint`)
-
-
 // Back button
 function backButton() {
   const backButtonElement = document.getElementById("backButton");
