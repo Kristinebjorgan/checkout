@@ -15,36 +15,6 @@ function backButton() {
   }
 }
 
-// Function to display cart contents and calculate totals (from checkout.js)
-function displayCartContents() {
-  const cartContainer = document.getElementById("cart-container");
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  let subtotal = 0;
-
-  cart.forEach((game) => {
-    const gameElement = document.createElement("div");
-    gameElement.innerHTML = `
-      <img src="${game.image}" alt="${game.title}">
-      <p>${game.title}</p>
-      <p>Price: ${game.price}</p>
-    `;
-    cartContainer.appendChild(gameElement);
-    subtotal += game.price;
-  });
-
-  // Calculate tax and total
-  const tax = subtotal * 0.13;
-  const total = subtotal + tax;
-
-  document.getElementById(
-    "subtotal"
-  ).textContent = `Subtotal: ${subtotal.toFixed(2)} EUR`;
-  document.getElementById("tax").textContent = `Tax: ${tax.toFixed(2)} EUR`;
-  document.getElementById("total").textContent = `Total: ${total.toFixed(
-    2
-  )} EUR`;
-}
-
 // Function to setup checkout page event listeners (from checkout.js)
 function setupCheckoutPage() {
   displayCartContents();
@@ -78,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Setup checkout page (specific to checkout page)
     setupCheckoutPage();
   }
+
+   if (document.querySelector(".game-details-container")) {
+     loadProductDetails();
+   }
 
   // Other page-specific conditions as needed...
 });
