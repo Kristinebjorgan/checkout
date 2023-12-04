@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
 
   // Load product details
-  if (window.location.pathname.endsWith("product.html")) {
+  if (window.location.pathname.endsWith("/HTML/product.html")) {
     loadProductDetails();
   }
 

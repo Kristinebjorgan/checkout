@@ -1,5 +1,5 @@
-import { fetchGames } from "./api.js";
-import { addToCart } from "./cart.js"; 
+import { fetchGames } from "/JS/api.js";
+import { addToCart } from "/JS/cart.js"; 
 
 export function loadProductDetails() {
   const urlParams = new URLSearchParams(window.location.search);

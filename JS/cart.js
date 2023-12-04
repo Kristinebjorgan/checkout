@@ -1,4 +1,4 @@
-import { fetchGames } from "./api.js";
+import { fetchGames } from "/JS/api.js";
 
 export function addToCart(gameId) {
   fetchGames().then((games) => {

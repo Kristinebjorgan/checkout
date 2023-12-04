@@ -1,6 +1,6 @@
 // checkout.js
 
-import { updateCartCount } from "./cart.js";
+import { updateCartCount } from "/JS/cart.js";
 
 // Display cart contents and calculate totals
 document.addEventListener("DOMContentLoaded", () => {
@@ -55,7 +55,7 @@ export function handleCheckout() {
 
   clearCart(); 
 
-  window.location.href = "success.html";
+  window.location.href = "/HTML/success.html";
 }
 
 // Function to clear the cart
