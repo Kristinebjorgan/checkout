@@ -17,7 +17,6 @@ function backButton() {
   }
 }
 
-
 // Fetch games
 document.addEventListener("DOMContentLoaded", () => {
   // Update cart count

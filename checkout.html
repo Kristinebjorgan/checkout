@@ -8,7 +8,10 @@
       name="description"
       content="a huge rage of games available at competitive prices with options for buying new or used. For hardcore gamers as well as casual players"
     />
-    <meta name="keywords" content="HTML, CSS, Gamehub, games, gaming, used, new"/>
+    <meta
+      name="keywords"
+      content="HTML, CSS, Gamehub, games, gaming, used, new"
+    />
     <meta name="author" content="Kristine Bjørgan Østby" />
     <script
       src="https://kit.fontawesome.com/ecc68a9eb9.js"
@@ -25,7 +28,7 @@
   </head>
   <body>
     <header id="top">
-      <a href="/HTML/index.html"
+      <a href="/index.html"
         ><img src="/images/gamehub logo.png" class="logo" alt="Gamehub Logo"
       /></a>
       <h1 class="title">A UNIVERSE OF GAMES</h1>
@@ -33,18 +36,18 @@
         <input class="searchbar" type="text" placeholder="Search.." />
       </div>
       <nav>
-        <a class="navlink" href="/HTML/index.html" aria-label="Home">Home</a>
-        <a class="navlink" href="/HTML/games.html" aria-label="Games">Games</a>
-        <a class="navlink" href="/HTML/games.html" aria-label="Equipment"
+        <a class="navlink" href="/index.html" aria-label="Home">Home</a>
+        <a class="navlink" href="/games.html" aria-label="Games">Games</a>
+        <a class="navlink" href="/games.html" aria-label="Equipment"
           >Equipment</a
         >
-        <a class="navlink" href="/HTML/games.html" aria-label="Outlet">Outlet</a>
+        <a class="navlink" href="/games.html" aria-label="Outlet">Outlet</a>
       </nav>
       <div class="icons">
         <div id="cart-icon-container">
           <i id="user" class="fa-solid fa-user"></i>
           <i id="heart" class="fa-solid fa-heart"></i>
-          <a href="/HTML/checkout.html" class="cart-link">
+          <a href="/checkout.html" class="cart-link">
             <i id="cart" class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count" class="cart-count">0</span>
           </a>
@@ -55,34 +58,27 @@
 
     <!-- MAIN -->
 
-<main class="form-container">
-         <form class="form" action="form-success.php" method="POST">
-         <fieldset>
-             <legend>Get in touch with us</legend>
-             <br>
-             <br>
-             <label for="name">Your name</label>
-             <input type="text" name="name" id="name" class="form__input" placeholder="Your name">
-             <label for="email">Your email</label>
-             <input type="text" name="email" id="email" class="form__input" placeholder="Your email">
-             <label for="message">Your inquiry</label>
-             <input type="text" name="message" id="message" class="form__input" placeholder="You message">
-         </fieldset>
-         <input type="submit" value="SEND" id="send">
-         </form>
-
- </main>
-
-
-<!-- FOOTER -->
-<a href="#top" class="to-top-button">↑ Top</a>
-<script defer src="Js/main.js" type="module"></script>
-            <footer>
+    <main class="container">
+      <div>
+        <h1>Checkout</h1>
+        <div id="cart-container" class="cart-container"></div>
+        <div class="totals">
+          <p id="subtotal">Subtotal:</p>
+          <p id="tax">Tax:</p>
+          <p id="total">Total:</p>
+        </div>
+        <a href="success.html" class="button">Place Order</a>
+        <button id="clear-cart-button" class="button">Clear Cart</button>
+      </div>
+    </main>
+    <a href="#top" class="to-top-button">↑ Top</a>
+    <script defer type="module" src="/JS/main.js"></script>
+    <footer>
       <div class="footerlinks">
-        <a id="Aboutus" href="/HTML/about.html">About</a>
-        <a id="Contact" href="/HTML/contact.html">Contact</a>
+        <a id="Aboutus" href="/about.html">About</a>
+        <a id="Contact" href="/contact.html">Contact</a>
       </div>
     </footer>
-    <script defer src="./JS/main.js" type="module"></script>
-        </body>
+    <script defer src="/JS/main.js" type="module"></script>
+  </body>
 </html>
