@@ -3,15 +3,15 @@ import { addToCart } from "./cart.js";
 
 export function displayGames(games) {
   {
-    const loadingMessage = document.getElementById("loadingMessage");
+    // const loadingMessage = document.getElementById("loadingMessage");
     const container = document.getElementById("games-container");
 
-    if (games.length === 0) {
-      loadingMessage.textContent = "No games found.";
-      return;
-    }
+    // if (games.length === 0) {
+    //   loadingMessage.textContent = "No games found.";
+    //   return;
+    // }
     
-    loadingMessage.style.display = "none";
+    // loadingMessage.style.display = "none";
 
     games.forEach((game) => {
       const productContainer = document.createElement("div");

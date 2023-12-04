@@ -59,7 +59,7 @@ export function handleCheckout() {
 }
 
 // Function to clear the cart
-function clearCart() {
+export function clearCart() {
   localStorage.removeItem("cart");
   document.getElementById("cart-container").innerHTML =
     "<p>Your cart is now empty.</p>";
