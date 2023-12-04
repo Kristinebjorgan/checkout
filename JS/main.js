@@ -1,21 +1,11 @@
 // Import functions from other modules
-import { fetchGames } from "./api.js";
-import { addToCart } from "./cart.js";
-import { handleCheckout } from "./checkout.js";
-import { displayGames } from "./games.js";
-import { displayGameDetails } from "./product.js";
-import { loadProductDetails } from "./product.js";
-import { updateCartCount } from "./cart.js";
-
-let baseURL;
-
-if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-    // Local development server
-    baseURL = "http://localhost:YOUR_PORT"; // Replace YOUR_PORT with your local server's port
-} else {
-    // Production server (Netlify)
-    baseURL = ""; // In production, use relative paths
-}
+import { fetchGames } from "/JS/api.js";
+import { addToCart } from "/JS/cart.js";
+import { handleCheckout } from "/JS/checkout.js";
+import { displayGames } from "/JS/games.js";
+import { displayGameDetails } from "/JS/product.js";
+import { loadProductDetails } from "/JS/product.js";
+import { updateCartCount } from "/JS/cart.js";
 
 // Back button
 function backButton() {
