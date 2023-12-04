@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("No games found");
       }
     })
-    .catch((error) => console.error("Error fetching games:", error));
+.catch((error) => console.error("Error fetching games:", error));
 
   // Initialize back button
   backButton();
