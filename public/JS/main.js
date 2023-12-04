@@ -1,11 +1,11 @@
 // Import functions from other modules
-import { fetchGames } from "/JS/api.js";
-import { addToCart } from "/JS/cart.js";
-import { handleCheckout } from "/JS/checkout.js";
-import { displayGames } from "/JS/games.js";
-import { displayGameDetails } from "/JS/product.js";
-import { loadProductDetails } from "/JS/product.js";
-import { updateCartCount } from "/JS/cart.js";
+import { fetchGames } from "./api.js";
+import { addToCart } from "./cart.js";
+import { handleCheckout } from ".checkout.js";
+import { displayGames } from "./games.js";
+import { displayGameDetails } from "./product.js";
+import { loadProductDetails } from "./product.js";
+import { updateCartCount } from "./cart.js";
 
 // Back button
 function backButton() {

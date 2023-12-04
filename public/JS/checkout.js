@@ -1,6 +1,6 @@
 // checkout.js
 
-import { updateCartCount } from "/JS/cart.js";
+import { updateCartCount } from ".cart.js";
 
 // Display cart contents and calculate totals
 document.addEventListener("DOMContentLoaded", () => {
