@@ -1,12 +1,12 @@
 // checkout.js
 
-import { updateCartCount } from ".cart.js";
+import { updateCartCount } from "./cart.js";
 
 // Display cart contents and calculate totals
 document.addEventListener("DOMContentLoaded", () => {
   const cartContainer = document.getElementById("cart-container");
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-   let subtotal = 0;
+  let subtotal = 0;
 
   cart.forEach((game) => {
     const gameElement = document.createElement("div");
@@ -53,7 +53,7 @@ export function handleCheckout() {
   console.log("Order placed", cart, `Total Price: ${totalPrice}`);
   alert(`Thank you for your order! Total Price: ${totalPrice}`);
 
-  clearCart(); 
+  clearCart();
 
   window.location.href = "/HTML/success.html";
 }

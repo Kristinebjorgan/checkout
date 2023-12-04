@@ -25,7 +25,7 @@
   </head>
   <body>
     <header id="top">
-      <a href="index.html"
+      <a href="/HTML/index.html"
         ><img src="/images/gamehub logo.png" class="logo" alt="Gamehub Logo"
       /></a>
       <h1 class="title">A UNIVERSE OF GAMES</h1>
@@ -44,7 +44,7 @@
         <div id="cart-icon-container">
           <i id="user" class="fa-solid fa-user"></i>
           <i id="heart" class="fa-solid fa-heart"></i>
-          <a href="checkout.html" class="cart-link">
+          <a href="/HTML/checkout.html" class="cart-link">
             <i id="cart" class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count" class="cart-count">0</span>
           </a>
@@ -52,29 +52,20 @@
       </div>
       <a id="backButton" class="back-arrow">←</a>
     </header>
-    <main class="container">
-    <div>
-      <h1>Checkout</h1>
-      <div id="cart-container" class="cart-container"></div>
-      <div class="totals">
-        <p id="subtotal">Subtotal:</p>
-        <p id="tax">Tax:</p>
-        <p id="total">Total:</p>
-      </div>
-      <a href="success.html" class="button">Place Order</a>
-      <button id="clear-cart-button" class="button">
-        Clear Cart
-      </button>
+
+    <!-- MAIN -->
+
+    <div class="main-content">
+      <div id="loader">Loading...</div>
+      <div class="products" id="games-container"></div>
     </div>
-</main>
-<a href="#top" class="to-top-button">↑ Top</a>    
-<script defer type="module" src="/JS/main.js"></script>
-      <footer>
+    <a href="#top" class="to-top-button">↑ Top</a>
+    <script defer src="./JS/main.js" type="module"></script>
+     <footer>
       <div class="footerlinks">
         <a id="Aboutus" href="/HTML/about.html">About</a>
         <a id="Contact" href="/HTML/contact.html">Contact</a>
       </div>
     </footer>
-    <script defer src="Js/main.js" type="module"></script>
   </body>
 </html>

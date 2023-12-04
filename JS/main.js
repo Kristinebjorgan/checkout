@@ -1,7 +1,7 @@
 // Import functions from other modules
 import { fetchGames } from "./api.js";
 import { addToCart } from "./cart.js";
-import { handleCheckout } from ".checkout.js";
+import { handleCheckout } from "./checkout.js";
 import { displayGames } from "./games.js";
 import { displayGameDetails } from "./product.js";
 import { loadProductDetails } from "./product.js";
@@ -16,6 +16,7 @@ function backButton() {
     });
   }
 }
+
 
 // Fetch games
 document.addEventListener("DOMContentLoaded", () => {

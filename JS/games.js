@@ -1,5 +1,5 @@
 // Fetch and display games
-import { addToCart } from "/JS/cart.js";
+import { addToCart } from "./cart.js";
 
 export function displayGames(games) {
   {
