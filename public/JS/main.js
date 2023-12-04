@@ -22,11 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update cart count
   updateCartCount();
 
-  // Load product details
-  if (window.location.pathname.endsWith("/HTML/product.html")) {
-    loadProductDetails();
-  }
-
   // Fetch and display games
   fetchGames()
     .then((games) => {
